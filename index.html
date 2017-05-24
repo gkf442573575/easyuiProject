@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>海航</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./lib/themes/icon.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./lib/themes/default/easyui.css">
+    <link rel="stylesheet" href="./lib/icomoon/style.css">
+    <link rel="stylesheet" href="./lib/ztreeCss/zTreeStyle/zTreeStyle.css">
+    <script type="text/javascript" src="./lib/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="./lib/easyui-1.4.1.min.js"></script>
+    <script type="text/javascript" src="./lib/Chart.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.ztree.all.min.js"></script>
+    <!-- 1366*768   ------  1920*1080-->
+</head>
+<body>
+<div id="content">
+    <div id="sideTabs" class="fl">
+        <div id="logo"></div>
+        <ul id="sideList">
+            <li id="sidetab1" class="tab icon-home">
+                <ul class="tabList">
+                    <li>Tab1</li>
+                    <li>Tab2</li>
+                    <li>Tab3</li>
+                </ul>
+            </li>
+            <li id="sidetab2" class="tab icon-phone"></li>
+            <li id="sidetab3" class="tab icon-backstage"></li>
+            <li id="sidetab4" class="tab icon-note"></li>
+        </ul>
+    </div>
+
+    <div class="fl" id="main">
+        <div id="mainHeader" class="fr">
+            <!--头部电话条--->
+            <div id="phoneTitle">
+                <!--头部电话信息--->
+                <div id="phoneMessage" class="fl">
+                    <p><span id="link_icon"></span>外部通话中<span id="phone_time">00:00:28</span></p>
+                    <p><span id="phoneNum">18610131417</span><span id="phoneAd">辽宁大连联通</span></p>
+                </div>
+                <!--头部按钮区域--->
+                <ul class="fl" id="headerIcon">
+                    <li class="iconBtn fl">
+                        <p class="icons icon-left"></p>
+                        <p>上线</p>
+                    </li>
+                    <li class="iconBtn fl">
+                        <p class="icons icon-right"></p>
+                        <p>下线</p>
+                    </li>
+                    <li class="iconBtn fl">
+                        <p class="icons icon-good"></p>
+                        <p>示闲</p>
+                    </li>
+                    <li class="iconBtn fl">
+                        <p class="icons icon-subtract"></p>
+                        <p>示忙</p>
+                    </li>
+                    <li class="iconBtn fl">
+                        <p class="icons icon-call"></p>
+                        <p>应答</p>
+                    </li>
+                    <li class="iconBtn fl">
+                        <p class="icons icon-keep"></p>
+                        <p>保持</p>
+                    </li>
+                    <li class="iconBtn fl">
+                        <p class="icons icon-callother"></p>
+                        <p>呼转</p>
+                    </li>
+                    <li class="iconBtn fl">
+                        <p class="icons icon-callOut"></p>
+                        <p>呼出</p>
+                    </li>
+                    <li class="iconBtn fl">
+                        <p class="icons icon-clear"></p>
+                        <p>整理</p>
+                    </li>
+                    <li class="iconBtn fl">
+                        <p class="icons icon-note"></p>
+                        <p>短信</p>
+                    </li>
+                </ul>
+                <!--头部登录信息--->
+                <div class="fl" id="loginMessage">
+                    <div id="headerImg" class="fl">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+                    <div id="infomation" class="fl">
+                        <p id="userName">白浅</p>
+                        <p>ID<span id="userId">10001</span></p>
+                        <p>技能组:接听做席</p>
+                    </div>
+                    <div id="closeBtn" class="icon-closeLink fl"></div>
+                </div>
+            </div>
+        </div>
+        <div id="mainbox" class="easyui-layout" style="width: 100%;height: 100%">
+            <!---------左侧区域------------>
+            <div id="sideLeft" data-options="region:'west',split:true" title="我的工作台" style="width:20%;height: 100%;">
+                <div class="easyui-tabs" style="width: 100%;height: 100%" id="leftTab">
+                    <div title="待处理9"></div>
+                    <div title="全部"></div>
+                    <!--<div title="数据统计" id="dataStat">-->
+                    <!--&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;图标区域&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+                    <!--<div class="easyui-tabs" style="width:100%;height:100%;">-->
+                    <!--<div title="本日" id="today">-->
+                    <!--<canvas id="dayChart"></canvas>-->
+                    <!--</div>-->
+                    <!--<div title="本周" id="week"></div>-->
+                    <!--<div title="本月" id="month"></div>-->
+                    <!--<div title="本年" id="year"></div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!---------工作信息------------>
+                    <div title="工作信息">
+                        <div id="jobInformation">
+                            <div id="infomationHeader">——————<span>公告信息</span>——————</div>
+                            <ul id="infomationList">
+                                <li class="news">
+                                    <div class="newsMain">
+                                        <div class="newsListHeader">
+                                            <div class="newsTime fl">2017/5/18</div>
+                                            <div class="iconDown fl upDown"></div>
+                                            <div class="newsTitle fl">
+                                                今天我我我哦我哦我我哦我大大大大大大大大
+                                            </div>
+                                        </div>
+                                        <div class="newsBody">
+                                            热烈庆祝飒飒大大大大大大大大的
+                                            热烈庆祝飒飒大大大大大大大大的
+                                            热烈庆祝飒飒大大大大大大大大的
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----中心区域---->
+            <div id="centerSide" data-options="region:'center'"
+                 style="width: 60%;height: 100%;">
+                <!-------第一个侧边栏TAB点击的显示区域------->
+                <div class="centerTab" id="centerTab1">
+                    <div class="easyui-tabs"></div>
+                </div>
+                <!-------第二个侧边栏TAB点击的显示区域-  tab设置最多添加9个 若想改去css中修改宽度------>
+                <div class="centerTab" id="centerTab2">
+                    <div class="easyui-tabs" id="tab1">
+                        <div title="客户资料" id="headerTab1">
+                            <div id="customerMes">
+                                <div class="mesHeader">————————<span>客户信息</span>————————————————————————————————————————
+                                </div>
+                                <div id="customerMain">
+                                    <ul id="customerMesList">
+                                        <!-------客户信息部分-------->
+                                        <li class="mesItem fl">来电号码:<span class="mes">1111</span></li>
+                                        <li class="mesItem fl">来电号码:<span class="mes"></span></li>
+                                        <li class="mesItem fl">来电号码:<span class="mes"></span></li>
+                                        <li class="mesItem fl">来电号码:<span class="mes"></span></li>
+                                        <li class="mesItem fl">来电号码:<span class="mes"></span></li>
+                                        <li class="mesItem fl">来电号码:<span class="mes"></span></li>
+                                        <li class="mesItem fl">来电号码:<span class="mes"></span></li>
+                                        <li class="mesItem fl">来电号码:<span class="mes"></span></li>
+                                        <li class="mesItem fl">来电号码:<span class="mes"></span></li>
+                                        <li class="mesItem fl">来电号码:<span class="mes"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="workOrder">
+                                <div class="mesHeader">————————<span>工单信息</span>————————————————————————————————————————
+                                </div>
+                                <div id="order">工单编号:<span id="orderNum">1111111111</span></div>
+                                <div class="easyui-tabs" id="tab2" style="width: 100%;">
+                                    <div title="咨询" id="consult">
+                                        <div class="easyui-tabs" id="tab3" style="width: 100%;height: 100%">
+                                            <div title="CRM系统" id="crm">
+                                                <ul class="workHeader">
+                                                    <li class="workItem fl">受理共号:<span class="workMes"></span></li>
+                                                    <li class="workItem fl">受理共号:<span class="workMes"></span></li>
+                                                    <li class="workItem fl">受理共号:<span class="workMes"></span></li>
+                                                    <li class="workItem fl">受理共号:<span class="workMes"></span></li>
+                                                    <li class="workItem fl">受理共号:<span class="workMes"></span></li>
+                                                </ul>
+                                                <div class="library">
+                                                    <div class="variableP">
+                                                        <dl class="variable fl">
+                                                            <dt>
+                                                                <input type="checkbox">环境变量
+                                                            </dt>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                        </dl>
+                                                        <dl class="variable fl">
+                                                            <dt>
+                                                                <input type="checkbox">环境变量
+                                                            </dt>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                        </dl>
+                                                        <dl class="variable fl">
+                                                            <dt>
+                                                                <input type="checkbox">环境变量
+                                                            </dt>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                        </dl>
+                                                        <dl class="variable fl">
+                                                            <dt>
+                                                                <input type="checkbox">环境变量
+                                                            </dt>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                        </dl>
+                                                        <dl class="variable fl">
+                                                            <dt>
+                                                                <input type="checkbox">环境变量
+                                                            </dt>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                        </dl>
+                                                        <dl class="variable fl">
+                                                            <dt>
+                                                                <input type="checkbox">环境变量
+                                                            </dt>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                            <dd><input type="checkbox">客户端</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div id="urlPath">环境变量>客户段</div>
+                                                </div>
+                                                <div class="upFile">
+                                                    <div class="fl">上传附件:</div>
+                                                    <div class="fl fileBox icon-upFile">
+                                                        <input type="file" class="fileCheck">
+                                                    </div>
+                                                    <!--<ul class="fileList fl">-->
+                                                    <!--<li>文档1</li>-->
+                                                    <!--<li>文档2</li>-->
+                                                    <!--</ul>-->
+                                                </div>
+                                                <div class="remark">
+                                                    <div>备注:</div>
+                                                    <div>
+                                                        <input class="easyui-textbox" data-options="multiline:true"
+                                                               type="text">
+                                                    </div>
+                                                    <div class="refresh icon-refresh markIcon"></div>
+                                                    <div class="sure icon-good markIcon"></div>
+                                                </div>
+                                            </div>
+                                            <div title="OA系统" id="oa"></div>
+                                        </div>
+                                    </div>
+                                    <div title="其他"></div>
+                                    <div title="其他"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div title="客户来电" id="headerTab2">
+
+                        </div>
+                        <div title="其他"></div>
+                    </div>
+                </div>
+                <!---------侧边栏后台管理-------->
+                <div class="centerTab" id="centerTab3">
+                    <div class="easyui-tabs" id="tab4">
+                        <div title="客户管理" id="manCustomers">
+                            <!-----后台管理查询客户信息----->
+                            <div id="manHeader">
+                                <div class="fl">客户姓名:<input type="text" placeholder="请输入客户姓名" class="searchInput"></div>
+                                <div class="fl">注册日期:<input type="text" placeholder="请输入注册日期"
+                                                            class="searchInput easyui-datebox" required="required">
+                                </div>
+                                <div id="searchBtn" class="fl easyui-menubutton" data-options="menu:'#slectList'">查询
+                                </div>
+                                <div id="slectList">
+                                    <div>1</div>
+                                    <div>2</div>
+                                    <div>3</div>
+                                    <div>4</div>
+                                    <div>5</div>
+                                </div>
+                            </div>
+                            <div id="manMain">
+                                <div id="operation">
+                                    <a href="javascript:;" id="add" class="fl easyui-linkbutton"
+                                       data-options="plain:true">
+                                        <img src="./img/add1.png" alt="">
+                                    </a>
+                                    <a href="javascript:;" id="change" class="fl easyui-linkbutton"
+                                       data-options="plain:true">
+                                        <img src="./img/chang1.png" alt="">
+                                    </a>
+                                    <a href="javascript:;" id="remove" class="fl easyui-linkbutton"
+                                       data-options="plain:true">
+                                        <img src="./img/remove2.png" alt="">
+                                    </a>
+                                    <a href="javascript:;" id="search" class="fl easyui-linkbutton"
+                                       data-options="plain:true">
+                                        <img src="./img/search3.png" alt="">
+                                    </a>
+                                </div>
+                                <table id="customersTable" class="easyui-datagrid" style="width:100%;"
+                                       data-options="
+                                       rownumbers:false,
+                                       singleSelect:false,
+                                       url:'./data/datagrid_data1.json',
+                                       method:'get',
+                                       pagination:true,
+                                       toolbar: '#operation',
+                                        iconCls: 'icon-edit',
+                                        pagination:true,
+                                       "
+                                >
+                                    <thead>
+                                    <tr>
+                                        <th data-options="field:'ck',checkbox:true,align:'center'">全选</th>
+                                        <th data-options="field:'itemid',align:'center'">Item ID</th>
+                                        <th data-options="field:'productid',align:'center'">Product</th>
+                                        <th data-options="field:'listprice',align:'center'">List Price</th>
+                                        <th data-options="field:'unitcost',align:'center'">Unit Cost</th>
+                                        <th data-options="field:'attr1',align:'center'">Attribute</th>
+                                        <th data-options="field:'status',align:'center'">Status</th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <div title="其他"></div>
+                        <div title="其他"></div>
+                    </div>
+                </div>
+                <!------------侧边栏的发送短信------------->
+                <div class="centerTab" id="centerTab4">
+                    <div class="easyui-tabs" id="tab5">
+                        <div title="发送短信" id="sendNote">
+                            <form action="" method="post" class="formMain">
+                                <div class="formList">
+                                    <span class="formText">用户姓名:</span>
+                                    <input type="text" class="easyui-textbox">
+                                </div>
+                                <div class="formList">
+                                    <span class="formText">身份证号码:</span>
+                                    <input type="text" class="easyui-textbox">
+                                </div>
+                                <div class="formList">
+                                    <span class="formText">来电号码:</span>
+                                    <input type="text" class="easyui-textbox">
+                                </div>
+                                <div class="formList">
+                                    <span class="formText">短信内容:</span>
+                                    <input type="text" class="easyui-textbox" data-options="multiline:true">
+                                </div>
+                                <button class="sub">发送</button>
+                            </form>
+                        </div>
+                        <div title="其他"></div>
+                        <div title="其他"></div>
+                    </div>
+                </div>
+            </div>
+            <!-------右侧区域------>
+            <div id="rightSide" data-options="region:'east',split:true" title="&nbsp;"
+                 style="width:20%;height: 100%;">
+                <div id="rightTab1" class="rightTab"></div>
+                <div id="rightTab2" class="rightTab">
+                    <!-------树形结构------>
+                    <div id="serRequest">
+                        <div class="treeHead mesHeader">————<span>服务请求</span>—————</div>
+                        <ul class="ztree treeMain" id="ztreeMain"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $(document).ready(function () {
+        function addPanel(el, index) {
+            el.tabs('add', {
+                title: 'Tab' + index,
+                content: '<div style="padding:10px">Content' + index + '</div>',
+                closable: true
+            });
+        }
+
+        function removePanel(el) {
+            var tab = el.tabs('getSelected');
+            if (tab) {
+                var index = el.tabs('getTabIndex', tab);
+                el.tabs('close', index);
+            }
+        }
+
+        $("#sideList li").hover(function () {
+            if ($(this).find(".tabList")) {
+                $(this).find(".tabList").show()
+            }
+        }, function () {
+            if ($(this).find(".tabList")) {
+                $(this).find(".tabList").hide()
+            }
+        });
+
+        function changImg(el,index) {
+            var $img = el.find(".l-btn-text img");
+            var imgSrc = $img.attr("src");
+            var changeSrc = imgSrc.substring(0,imgSrc.lastIndexOf(".")-1)+index+".png";
+            $img.attr("src",changeSrc);
+        }
+
+        $("#operation a.easyui-linkbutton").hover(function () {
+            changImg($(this),2)
+        },function () {
+            changImg($(this),1)
+        });
+
+        $("#operation a.easyui-linkbutton").click(function () {
+            changImg($(this),3)
+        });
+
+
+        $("#sideList li").on("click", ".tabList li", function () {
+            var index = $(this).parents(".tab").index();
+            showCenterTab(index);
+            var i = $(this).index();
+            $(".centerTab").eq(index)
+                .find(".easyui-tabs .tabs li").eq(i).addClass("tabs-selected")
+                .siblings("li").removeClass("tabs-selected");
+            $(".centerTab").eq(index)
+                .find(".easyui-tabs .tabs-panels .panel").eq(i).show()
+                .siblings(".panel").hide();
+        });
+
+        function create(index) {
+            var len = $("#sideList li").eq(index).find(".tabList li").length;
+            for (var i = 1; i <= len; i++) {
+                addPanel($(".centerTab").eq(index).find(".easyui-tabs"), i)
+            }
+        }
+
+        create(0) //循环调用
+        $("#infomationList").on("click", ".news", function (evt) {
+            var e = window.event || evt
+            e.preventDefault();
+            var $newsBody = $(this).find(".newsBody");
+            var $upDown = $(this).find(".upDown");
+            if ($newsBody.is(":hidden")) {
+                $newsBody.show();
+                $upDown.addClass("iconUp").removeClass("iconDown");
+            } else {
+                $newsBody.hide();
+                $upDown.addClass("iconDown").removeClass("iconUp");
+            }
+        });
+        $("#sideList li").click(function () {
+            var index = $(this).index();
+            showCenterTab(index)
+        });
+        function showCenterTab(index) {
+            $(".centerTab").eq(index).css({
+                opacity: 1,
+                "z-index": 5
+            }).siblings(".centerTab").css({
+                opacity: 0,
+                "z-index": 1
+            })
+        }
+
+
+//        var dayCanvas = document.querySelector("#dayChart");
+//        dayCanvas.width = $("#today").get(0).clientHeight;
+//        dayCanvas.height = $("#today").get(0).clientHeight;
+//        var dayCtx = dayCanvas.getContext("2d");
+//        var data = {
+//            labels: [
+//                "任务1",
+//                "任务2",
+//                "任务3"
+//            ],
+//            datasets: [
+//                {
+//                    data: [300, 50, 100],
+//                    backgroundColor: [
+//                        "#FF6384",
+//                        "#36A2EB",
+//                        "#FFCE56"
+//                    ],
+//                    hoverBackgroundColor: [
+//                        "#FF6384",
+//                        "#36A2EB",
+//                        "#FFCE56"
+//                    ]
+//                }]
+//        };
+//        new Chart(dayCtx, {
+//            type: "pie",
+//            data: data,
+//            options: {
+//                animation: {
+//                    animateScale: true
+//                }
+//            }
+//        });
+        var setting = {};
+        var zNodes = [
+            {
+                name: "test1", open: true, children: [
+                {name: "test1_1"}, {name: "test1_2"}]
+            },
+            {
+                name: "test2", open: true, children: [
+                {name: "test2_1"}, {name: "test2_2"}]
+            }
+        ];
+        $.fn.zTree.init($("#ztreeMain"), setting, zNodes);
+    });
+
+</script>
+</body>
+</html>

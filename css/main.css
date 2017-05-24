@@ -1,0 +1,863 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
+  overflow-scrolling: touch; }
+
+html * {
+  outline: 0;
+  box-sizing: border-box;
+  word-wrap: break-word; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+input, select, textarea {
+  font-size: 100%; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+del {
+  text-decoration: line-through; }
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 500; }
+
+ol, ul, li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+sub, sup {
+  font-size: 75%;
+  ine-eight: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+a:hover {
+  text-decoration: none; }
+
+ins, a {
+  color: #000;
+  text-decoration: none; }
+
+button, input {
+  border: none;
+  outline: none; }
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  font-family: "PingFang-SC-Medium", "PingFang SC", "San Francisco", "sans-serif", "Arial", "Microsoft YaHei"; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.overFlowText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+body* {
+  overflow-x: hidden; }
+
+#content {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5; }
+  #content ::-webkit-scrollbar {
+    width: 2px;
+    height: 15px; }
+  #content ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #F5F5F5; }
+  #content ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #0098ca; }
+  #content #sideTabs {
+    width: 3.47368%;
+    height: 100%;
+    min-width: 3.47368%;
+    background-color: #0098ca; }
+    #content #sideTabs #logo {
+      width: 100%;
+      height: 83px;
+      background: url("../img/logo.png") no-repeat;
+      background-size: contain; }
+    #content #sideTabs #sideList {
+      width: 100%; }
+      #content #sideTabs #sideList .tab {
+        width: 100%;
+        height: 66px;
+        font-size: 24px;
+        text-align: center;
+        line-height: 66px;
+        color: #ffffff;
+        position: relative; }
+        #content #sideTabs #sideList .tab .tabList {
+          position: absolute;
+          width: 200px;
+          z-index: 10;
+          top: 0;
+          right: -200px;
+          overflow: hidden;
+          border: 1px solid #cccccc;
+          border-bottom: 0;
+          display: none;
+          background-color: #6a6a6a; }
+          #content #sideTabs #sideList .tab .tabList li {
+            width: 100%;
+            height: 66px;
+            border-bottom: 1px solid #cccccc;
+            color: #cccccc;
+            line-height: 66px;
+            text-align: center;
+            font-size: 14px; }
+          #content #sideTabs #sideList .tab .tabList li:hover {
+            background-color: #cccccc;
+            color: #009aca; }
+      #content #sideTabs #sideList .tab:before {
+        color: #ffffff;
+        padding: 8px;
+        border: 1px solid #ffffff;
+        border-radius: 50%; }
+      #content #sideTabs #sideList .tab:hover {
+        background-color: #85c2ca; }
+      #content #sideTabs #sideList .tab:hover .tab:before {
+        color: #cccccc; }
+  #content #main {
+    width: 96.50%;
+    height: 100%;
+    background-color: #ffffff; }
+    #content #main #mainHeader {
+      min-width: 1000px;
+      height: 84px;
+      border-top-left-radius: 84px;
+      border-bottom-left-radius: 84px; }
+      #content #main #mainHeader #phoneTitle {
+        width: 100%;
+        height: 100%;
+        background-color: #0098ca;
+        border-top-left-radius: 84px;
+        border-bottom-left-radius: 84px; }
+        #content #main #mainHeader #phoneTitle #phoneMessage {
+          height: 100%;
+          margin-left: 5%; }
+          #content #main #mainHeader #phoneTitle #phoneMessage p {
+            height: 50%;
+            color: #ffffff;
+            font-size: 16px; }
+            #content #main #mainHeader #phoneTitle #phoneMessage p span {
+              display: inline-block; }
+          #content #main #mainHeader #phoneTitle #phoneMessage #link_icon {
+            width: 5px;
+            height: 5px;
+            background-color: #09fe85;
+            border-radius: 50%;
+            margin-right: 10px; }
+          #content #main #mainHeader #phoneTitle #phoneMessage #phoneAd {
+            padding-left: 10px; }
+          #content #main #mainHeader #phoneTitle #phoneMessage #phone_time {
+            color: #09fe85;
+            padding-left: 10px; }
+          #content #main #mainHeader #phoneTitle #phoneMessage p:nth-child(1) {
+            line-height: 42px; }
+        #content #main #mainHeader #phoneTitle #headerIcon {
+          height: 100%;
+          margin-left: 5%; }
+          #content #main #mainHeader #phoneTitle #headerIcon .iconBtn {
+            width: 43px;
+            height: 100%;
+            text-align: center; }
+            #content #main #mainHeader #phoneTitle #headerIcon .iconBtn p {
+              color: #e8e8e6; }
+            #content #main #mainHeader #phoneTitle #headerIcon .iconBtn .icons {
+              margin-top: 20px; }
+            #content #main #mainHeader #phoneTitle #headerIcon .iconBtn p:nth-child(2) {
+              margin-top: 10px;
+              font-size: 16px; }
+          #content #main #mainHeader #phoneTitle #headerIcon .icons:before {
+            color: #e8e8e6;
+            font-size: 14px;
+            padding: 5px;
+            border: 2px solid #e8e8e6;
+            border-radius: 50%;
+            font-weight: bolder; }
+        #content #main #mainHeader #phoneTitle #loginMessage {
+          height: 100%;
+          margin-left: 10px; }
+          #content #main #mainHeader #phoneTitle #loginMessage #headerImg {
+            width: 50px;
+            height: 50px;
+            margin-top: 13px;
+            border: 4px solid #07ff87;
+            border-radius: 50%; }
+            #content #main #mainHeader #phoneTitle #loginMessage #headerImg img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%; }
+          #content #main #mainHeader #phoneTitle #loginMessage #infomation {
+            height: 100%;
+            padding-top: 10px;
+            overflow: hidden; }
+            #content #main #mainHeader #phoneTitle #loginMessage #infomation p {
+              color: #f4f9fd;
+              font-size: 14px;
+              height: 20px;
+              line-height: 20px;
+              padding-left: 10px; }
+          #content #main #mainHeader #phoneTitle #loginMessage #closeBtn {
+            width: 40px;
+            height: 100%;
+            font-size: 40px;
+            line-height: 84px;
+            margin-left: 10px; }
+          #content #main #mainHeader #phoneTitle #loginMessage .icon-closeLink:before {
+            color: #f0f9fe; }
+    #content #main #mainbox .layout-split-west, #content #main #mainbox .layout-split-east {
+      border: none; }
+    #content #main #mainbox .panel-header, #content #main #mainbox .panel-body {
+      border: none; }
+    #content #main #mainbox .panel-header {
+      height: 50px;
+      background: #ffffff; }
+    #content #main #mainbox .layout-split-west {
+      border-top: 1px solid #cccccc; }
+      #content #main #mainbox .layout-split-west .panel-tool {
+        position: absolute;
+        top: 700%;
+        right: 0; }
+    #content #main #mainbox .layout-panel-east, #content #main #mainbox .layout-panel-west {
+      z-index: 0; }
+    #content #main #mainbox .layout-panel-center {
+      border-top: 1px solid #cccccc; }
+    #content #main #mainbox .layout-panel-east {
+      border-top: 1px solid #cccccc; }
+      #content #main #mainbox .layout-panel-east .panel-tool {
+        position: absolute;
+        top: 700%;
+        left: 0; }
+    #content #main #mainbox .layout-expand {
+      border-top: 1px solid #cccccc; }
+      #content #main #mainbox .layout-expand .panel-header {
+        overflow: visible;
+        position: relative; }
+        #content #main #mainbox .layout-expand .panel-header .panel-tool {
+          top: 700%; }
+    #content #main #mainbox .layout-expand-west .panel-header {
+      position: relative; }
+    #content #main #mainbox .panel-title {
+      width: 100% !important;
+      height: 100% !important;
+      line-height: 50px;
+      text-align: center; }
+    #content #main #mainbox .layout-expand-west {
+      position: relative; }
+    #content #main #mainbox .combo-arrow {
+      background-color: #ffffff !important; }
+    #content #main #mainbox .easyui-tabs {
+      border: none;
+      overflow-x: hidden; }
+      #content #main #mainbox .easyui-tabs .tabs-panels {
+        border: none; }
+      #content #main #mainbox .easyui-tabs .tabs-header {
+        height: 30px !important;
+        border: none !important;
+        background-color: #ffffff;
+        padding: 0;
+        margin: 0;
+        border: none; }
+        #content #main #mainbox .easyui-tabs .tabs-header .tabs-wrap {
+          width: 100% !important; }
+        #content #main #mainbox .easyui-tabs .tabs-header .tabs {
+          width: 100% !important;
+          height: 30px !important;
+          padding: 0 !important;
+          background-color: #ffffff;
+          border: none; }
+          #content #main #mainbox .easyui-tabs .tabs-header .tabs li {
+            width: 33.33% !important;
+            height: 100% !important;
+            margin: 0;
+            background-color: #e8e8e8; }
+            #content #main #mainbox .easyui-tabs .tabs-header .tabs li .tabs-inner {
+              width: 100%;
+              padding: 0 !important;
+              height: 100% !important;
+              text-align: center;
+              border-radius: 0;
+              line-height: 30px;
+              background: #e8e8e8;
+              border: 1px solid transparent;
+              border-bottom: 1px solid #cccccc; }
+              #content #main #mainbox .easyui-tabs .tabs-header .tabs li .tabs-inner .tabs-inner:nth-child(1) {
+                border-left: none; }
+              #content #main #mainbox .easyui-tabs .tabs-header .tabs li .tabs-inner .tabs-title {
+                font-size: 13px;
+                color: #666666;
+                line-height: 30px; }
+          #content #main #mainbox .easyui-tabs .tabs-header .tabs .tabs-selected {
+            background-color: #ffffff; }
+            #content #main #mainbox .easyui-tabs .tabs-header .tabs .tabs-selected .tabs-inner {
+              background-color: #ffffff;
+              border-left: 1px solid #cccccc;
+              border-right: 1px solid #cccccc;
+              border-bottom: 1px solid transparent;
+              border-top: 1px solid #009aca; }
+            #content #main #mainbox .easyui-tabs .tabs-header .tabs .tabs-selected .tabs-inner:nth-child(1) {
+              border-left: none; }
+            #content #main #mainbox .easyui-tabs .tabs-header .tabs .tabs-selected .tabs-title {
+              color: #0098ca !important; }
+      #content #main #mainbox .easyui-tabs .tabs-panels {
+        width: 100% !important;
+        height: 100% !important; }
+        #content #main #mainbox .easyui-tabs .tabs-panels .panel {
+          width: 100% !important;
+          height: 100% !important; }
+    #content #main #mainbox .panel-body {
+      background-color: transparent; }
+    #content #main #mainbox .layout-expand {
+      background-color: transparent; }
+    #content #main #mainbox #sideLeft {
+      width: 100%;
+      overflow: hidden; }
+      #content #main #mainbox #sideLeft #dataStat {
+        width: 100%;
+        height: 100%; }
+      #content #main #mainbox #sideLeft #today {
+        width: 100% !important;
+        height: 200px !important; }
+    #content #main #mainbox #leftTab #jobInformation {
+      width: 100%;
+      overflow-y: auto; }
+      #content #main #mainbox #leftTab #jobInformation #infomationHeader {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #c1c1c2;
+        font-weight: bold; }
+        #content #main #mainbox #leftTab #jobInformation #infomationHeader span {
+          padding: 0 8px;
+          font-size: 18px;
+          color: #58caee; }
+      #content #main #mainbox #leftTab #jobInformation #infomationList {
+        width: 100%;
+        overflow: hidden; }
+        #content #main #mainbox #leftTab #jobInformation #infomationList .news {
+          width: 100%;
+          overflow: hidden; }
+          #content #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain {
+            width: 90%;
+            margin: 0 10px;
+            overflow: hidden;
+            border-bottom: 1px solid #000; }
+            #content #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsListHeader {
+              width: 100%;
+              color: #434343;
+              font-size: 14px;
+              overflow: hidden;
+              cursor: pointer; }
+              #content #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsListHeader .upDown {
+                width: 0;
+                height: 0;
+                margin: 3px 5px; }
+              #content #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsListHeader .iconDown {
+                border-top: 5px solid transparent;
+                border-left: 10px solid #434343;
+                border-bottom: 5px solid transparent; }
+              #content #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsListHeader .newsTitle {
+                width: 60%;
+                overflow: hidden; }
+              #content #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsListHeader .iconUp {
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 10px solid #434343; }
+            #content #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsBody {
+              width: 100%;
+              overflow: hidden;
+              font-size: 16px;
+              color: #6a6a6a;
+              line-height: 20px;
+              padding: 20px 10px;
+              text-indent: 20px;
+              display: none; }
+    #content #main #mainbox #centerSide {
+      position: relative; }
+      #content #main #mainbox #centerSide .centerTab {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        opacity: 0;
+        border-left: 1px solid #cccccc;
+        border-right: 1px solid #cccccc; }
+        #content #main #mainbox #centerSide .centerTab .tabs {
+          width: 100% !important; }
+          #content #main #mainbox #centerSide .centerTab .tabs li {
+            width: 10% !important; }
+        #content #main #mainbox #centerSide .centerTab .tabs-wrap {
+          width: 100% !important; }
+        #content #main #mainbox #centerSide .centerTab #headerTab1 {
+          width: 100%; }
+        #content #main #mainbox #centerSide .centerTab .tabs-panels {
+          border: none; }
+        #content #main #mainbox #centerSide .centerTab .panel-body {
+          width: 100% !important; }
+      #content #main #mainbox #centerSide #centerTab1 {
+        opacity: 1;
+        z-index: 5; }
+        #content #main #mainbox #centerSide #centerTab1 .tabs-wrap {
+          width: 100% !important;
+          height: 30px !important; }
+        #content #main #mainbox #centerSide #centerTab1 .easyui-tabs {
+          width: 100% !important;
+          height: 100% !important; }
+          #content #main #mainbox #centerSide #centerTab1 .easyui-tabs .tabs-header {
+            width: 100% !important;
+            border-left: 1px solid #cccccc;
+            border-right: 1px solid #cccccc; }
+        #content #main #mainbox #centerSide #centerTab1 .icon-add, #content #main #mainbox #centerSide #centerTab1 .icon-remove {
+          width: 16px;
+          height: 16px; }
+        #content #main #mainbox #centerSide #centerTab1 .tabs-tool {
+          height: 50px !important;
+          background-color: #ffffff;
+          border: none;
+          right: 0;
+          top: 0; }
+          #content #main #mainbox #centerSide #centerTab1 .tabs-tool a {
+            background-color: #cfc9cc;
+            color: #009aca;
+            padding-right: 10px; }
+            #content #main #mainbox #centerSide #centerTab1 .tabs-tool a .l-btn-icon {
+              height: 16px !important;
+              width: 16px !important;
+              margin-left: 5px; }
+      #content #main #mainbox #centerSide #centerTab2 {
+        width: 100%;
+        overflow: hidden; }
+        #content #main #mainbox #centerSide #centerTab2 #customerMes {
+          width: 100%;
+          overflow: hidden; }
+          #content #main #mainbox #centerSide #centerTab2 #customerMes #customerMain {
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 1px solid #009aca;
+            margin: 20px 0; }
+            #content #main #mainbox #centerSide #centerTab2 #customerMes #customerMain #customerMesList {
+              width: 100%;
+              overflow: hidden; }
+              #content #main #mainbox #centerSide #centerTab2 #customerMes #customerMain #customerMesList .mesItem {
+                width: 30%;
+                height: 30px;
+                padding-left: 20px;
+                font-size: 14px; }
+                #content #main #mainbox #centerSide #centerTab2 #customerMes #customerMain #customerMesList .mesItem .mes {
+                  text-decoration: underline; }
+        #content #main #mainbox #centerSide #centerTab2 #workOrder {
+          position: relative; }
+          #content #main #mainbox #centerSide #centerTab2 #workOrder .mesHeader em {
+            font-size: 14px; }
+            #content #main #mainbox #centerSide #centerTab2 #workOrder .mesHeader em i {
+              font-size: 14px;
+              color: salmon;
+              font-style: normal; }
+          #content #main #mainbox #centerSide #centerTab2 #workOrder #order {
+            width: 30%;
+            height: 30px;
+            position: absolute;
+            top: 60px;
+            right: 100px;
+            z-index: 5;
+            font-size: 16px; }
+            #content #main #mainbox #centerSide #centerTab2 #workOrder #order #orderNum {
+              color: salmon; }
+        #content #main #mainbox #centerSide #centerTab2 #consult {
+          width: 90% !important;
+          height: 420px !important;
+          margin: 30px 5% 0;
+          box-sizing: border-box;
+          border: 2px solid #009aca;
+          border-radius: 36px;
+          position: relative; }
+          #content #main #mainbox #centerSide #centerTab2 #consult .tabs-header {
+            border: none;
+            padding: 0;
+            margin: 0; }
+            #content #main #mainbox #centerSide #centerTab2 #consult .tabs-header .tabs-wrap {
+              background-color: #ffffff; }
+            #content #main #mainbox #centerSide #centerTab2 #consult .tabs-header .tabs {
+              border: none; }
+              #content #main #mainbox #centerSide #centerTab2 #consult .tabs-header .tabs li {
+                line-height: 30px;
+                height: 30px !important;
+                margin: 0;
+                padding: 0;
+                border: none;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border-top-right-radius: 0; }
+                #content #main #mainbox #centerSide #centerTab2 #consult .tabs-header .tabs li .tabs-inner {
+                  height: 100% !important;
+                  margin: 0;
+                  padding: 0;
+                  border-top-left-radius: 30px;
+                  border-bottom-right-radius: 30px;
+                  border-top-right-radius: 0; }
+                  #content #main #mainbox #centerSide #centerTab2 #consult .tabs-header .tabs li .tabs-inner .tabs-title {
+                    line-height: 30px; }
+        #content #main #mainbox #centerSide #centerTab2 .workHeader {
+          width: 100%;
+          overflow: hidden; }
+          #content #main #mainbox #centerSide #centerTab2 .workHeader .workItem {
+            width: 25%;
+            height: 20px;
+            line-height: 20px;
+            margin-left: 10px;
+            font-size: 14px;
+            color: #4c4c4c; }
+        #content #main #mainbox #centerSide #centerTab2 .library {
+          width: 90%;
+          overflow: hidden;
+          margin: 10px 5%;
+          border: 2px solid #000000;
+          border-radius: 10px; }
+          #content #main #mainbox #centerSide #centerTab2 .library #urlPath {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            color: #3d3d3d;
+            text-indent: 40px;
+            border-top: 1px solid #000000; }
+          #content #main #mainbox #centerSide #centerTab2 .library .variableP {
+            width: 100%;
+            overflow: hidden; }
+          #content #main #mainbox #centerSide #centerTab2 .library .variable {
+            width: 16.6%;
+            height: 100%; }
+            #content #main #mainbox #centerSide #centerTab2 .library .variable input[type=checkbox] {
+              border-radius: 50%; }
+            #content #main #mainbox #centerSide #centerTab2 .library .variable dt {
+              width: 100%;
+              height: 40px;
+              line-height: 40px;
+              font-size: 14px;
+              color: #4c4c4c;
+              text-align: center;
+              border-bottom: 1px solid #4c4c4c; }
+            #content #main #mainbox #centerSide #centerTab2 .library .variable dd {
+              width: 100%;
+              height: 30px;
+              line-height: 30px;
+              font-size: 14px;
+              color: #4c4c4c;
+              text-align: center; }
+            #content #main #mainbox #centerSide #centerTab2 .library .variable dd:nth-child(1) {
+              padding-top: 60px; }
+            #content #main #mainbox #centerSide #centerTab2 .library .variable dd:last-child {
+              padding-bottom: 20px; }
+          #content #main #mainbox #centerSide #centerTab2 .library .variable + .variable {
+            border-left: 1px solid #4c4c4c; }
+        #content #main #mainbox #centerSide #centerTab2 .upFile {
+          width: 90%;
+          height: 30px;
+          margin-left: 5%;
+          line-height: 30px; }
+          #content #main #mainbox #centerSide #centerTab2 .upFile .fileBox {
+            width: 30px;
+            height: 30px;
+            height: 100%;
+            position: relative;
+            margin-left: 10px; }
+          #content #main #mainbox #centerSide #centerTab2 .upFile .fileBox:before {
+            color: #009aca;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1; }
+          #content #main #mainbox #centerSide #centerTab2 .upFile .fileCheck {
+            width: 30px;
+            height: 30px;
+            opacity: 0;
+            position: absolute;
+            z-index: 5;
+            top: 0;
+            left: 0; }
+        #content #main #mainbox #centerSide #centerTab2 .fileList li {
+          font-size: 14px;
+          color: #009aca;
+          float: left;
+          line-height: 30px;
+          margin-left: 10px; }
+        #content #main #mainbox #centerSide #centerTab2 .remark {
+          width: 90%;
+          margin-left: 5%;
+          overflow: hidden;
+          position: relative; }
+          #content #main #mainbox #centerSide #centerTab2 .remark textarea.textbox-text {
+            width: 80% !important;
+            height: 50px !important;
+            border-radius: 10px;
+            border: 2px solid #6a6a6a; }
+          #content #main #mainbox #centerSide #centerTab2 .remark .markIcon {
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+            text-align: center;
+            position: absolute;
+            top: 20px;
+            line-height: 30px; }
+          #content #main #mainbox #centerSide #centerTab2 .remark .refresh {
+            right: 12%; }
+          #content #main #mainbox #centerSide #centerTab2 .remark .sure {
+            right: 4%; }
+          #content #main #mainbox #centerSide #centerTab2 .remark .markIcon:before {
+            color: #009aca;
+            padding: 8px;
+            border: 1px solid #009aca;
+            border-radius: 50%; }
+      #content #main #mainbox #centerSide #centerTab3 #manCustomers {
+        width: 100%;
+        overflow: hidden; }
+        #content #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader {
+          width: 100%;
+          height: 70px; }
+          #content #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div {
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            padding-top: 20px;
+            margin-left: 40px; }
+            #content #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div .searchInput, #content #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div .textbox {
+              width: 200px !important;
+              height: 30px !important;
+              padding: 4px;
+              border: 1px solid #009aca;
+              border-radius: 5px;
+              margin-left: 5px; }
+            #content #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div .textbox-text {
+              height: 30px !important;
+              padding: 0 !important;
+              margin: 0 !important; }
+            #content #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div .validatebox-invalid {
+              background-color: #ffffff;
+              text-indent: 10px; }
+          #content #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #searchBtn {
+            width: 60px;
+            height: 30px;
+            margin-top: 20px;
+            padding-top: 0;
+            background-color: #009aca;
+            color: #ffffff;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 5px; }
+          #content #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader .m-btn-downarrow {
+            line-height: 30px;
+            padding-top: 10px; }
+        #content #main #mainbox #centerSide #centerTab3 #manCustomers #manMain {
+          width: 100%;
+          overflow: hidden; }
+          #content #main #mainbox #centerSide #centerTab3 #manCustomers #manMain table {
+            width: 100% !important;
+            overflow: hidden; }
+          #content #main #mainbox #centerSide #centerTab3 #manCustomers #manMain .datagrid {
+            width: 100%;
+            overflow: hidden; }
+      #content #main #mainbox #centerSide #centerTab3 #manMain {
+        width: 100%;
+        overflow: hidden; }
+        #content #main #mainbox #centerSide #centerTab3 #manMain #operation {
+          width: 100%;
+          height: 30px; }
+          #content #main #mainbox #centerSide #centerTab3 #manMain #operation a.easyui-linkbutton {
+            padding: 0 !important;
+            height: 30px !important; }
+          #content #main #mainbox #centerSide #centerTab3 #manMain #operation a.easyui-linkbutton:hover {
+            background-color: transparent;
+            border: none; }
+          #content #main #mainbox #centerSide #centerTab3 #manMain #operation a {
+            width: 80px;
+            text-align: center;
+            color: #ffffff;
+            line-height: 30px;
+            margin-left: 3px;
+            border-radius: 5px;
+            font-size: 16px;
+            float: left; }
+            #content #main #mainbox #centerSide #centerTab3 #manMain #operation a img {
+              width: 100%;
+              height: 100%; }
+          #content #main #mainbox #centerSide #centerTab3 #manMain #operation a.l-btn span.l-btn-left {
+            padding: 0;
+            margin: 0;
+            line-height: 30px; }
+          #content #main #mainbox #centerSide #centerTab3 #manMain #operation .l-btn-left {
+            height: 30px; }
+          #content #main #mainbox #centerSide #centerTab3 #manMain #operation span.l-btn-text {
+            width: auto;
+            height: 30px;
+            line-height: 30px; }
+      #content #main #mainbox #centerSide #centerTab4 .formList {
+        width: 90%;
+        overflow: hidden;
+        margin-left: 5%;
+        margin-top: 5%; }
+        #content #main #mainbox #centerSide #centerTab4 .formList span.formText {
+          float: left;
+          width: 15%;
+          height: 30px;
+          line-height: 30px;
+          text-align: right;
+          margin-right: 5%;
+          font-size: 14px; }
+        #content #main #mainbox #centerSide #centerTab4 .formList input.textbox-text {
+          height: 30px;
+          width: 40% !important;
+          border: 1px solid #009aca;
+          border-radius: 5px; }
+        #content #main #mainbox #centerSide #centerTab4 .formList textarea.textbox-text {
+          width: 60% !important;
+          height: 200px !important;
+          border: 1px solid #009aca;
+          border-radius: 5px; }
+      #content #main #mainbox #centerSide #centerTab4 .sub {
+        width: 60px;
+        height: 30px;
+        background-color: #009aca;
+        color: #ffffff;
+        text-align: center;
+        position: absolute;
+        border-radius: 5px;
+        line-height: 30px;
+        right: 10%;
+        bottom: 20px; }
+      #content #main #mainbox #centerSide #centerTab4 .formMain {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 50px; }
+    #content #main #mainbox .datagrid-header {
+      width: 100% !important;
+      margin-top: 10px; }
+      #content #main #mainbox .datagrid-header .datagrid-header-inner {
+        width: 100% !important;
+        border-top: 1px solid #cccccc; }
+    #content #main #mainbox .datagrid-row-over, #content #main #mainbox .datagrid-header-over {
+      background-color: transparent;
+      color: #000; }
+    #content #main #mainbox .datagrid-btable {
+      width: 100% !important; }
+      #content #main #mainbox .datagrid-btable td {
+        color: #228bcc;
+        text-align: center; }
+    #content #main #mainbox .datagrid-header-row {
+      background-color: #ffffff; }
+    #content #main #mainbox .datagrid-view {
+      width: 100% !important; }
+    #content #main #mainbox .datagrid-body {
+      width: 100% !important; }
+    #content #main #mainbox .datagrid-btable {
+      width: 100% !important; }
+      #content #main #mainbox .datagrid-btable tr {
+        width: 100% !important; }
+    #content #main #mainbox .datagrid-view2 {
+      width: 100% !important; }
+    #content #main #mainbox .datagrid-pager {
+      width: 60%;
+      margin-left: 20%;
+      height: auto;
+      background-color: #ffffff;
+      border: none;
+      padding: 0; }
+    #content #main #mainbox .datagrid-header td, #content #main #mainbox .datagrid-body td, #content #main #mainbox .datagrid-footer td {
+      border-style: solid; }
+    #content #main #mainbox .pagination-btn-separator {
+      display: none; }
+    #content #main #mainbox .pagination-page-list {
+      background-color: #ffffff; }
+    #content #main #mainbox .pagination-num {
+      text-align: center; }
+    #content #main #mainbox .datagrid-row-selected {
+      background-color: #009aca; }
+    #content #main #mainbox .datagrid-toolbar {
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      border: none; }
+    #content #main #mainbox .pagination-info {
+      display: none; }
+    #content #main #mainbox span.l-btn-empty, #content #main #mainbox span.l-btn-icon {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      width: 16px; }
+    #content #main #mainbox .mesHeader {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      color: #c1c1c2;
+      font-weight: bold;
+      padding-left: 30px; }
+      #content #main #mainbox .mesHeader span {
+        padding: 0 8px;
+        font-size: 18px;
+        color: #58caee; }
+    #content #main #mainbox #rightSide {
+      width: 100%;
+      height: 100%; }
+      #content #main #mainbox #rightSide .rightTab {
+        width: 100%;
+        overflow: hidden; }
+    #content #main #mainbox .treeMain {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 10px; }
+    #content #main .panel-header {
+      float: left; }
+    #content #main .layout-body {
+      float: left; }
+
+/*# sourceMappingURL=main.css.map */
