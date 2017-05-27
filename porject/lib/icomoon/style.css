@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?kvn9uq');
+  src:  url('fonts/icomoon.eot?kvn9uq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kvn9uq') format('truetype'),
+    url('fonts/icomoon.woff?kvn9uq') format('woff'),
+    url('fonts/icomoon.svg?kvn9uq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-penBTn:before {
+  content: "\e911";
+  color: #c1c1c2;
+}
+.icon-blowUp:before {
+  content: "\e912";
+  color: #c1c1c2;
+}
+.icon-addBTn:before {
+  content: "\e913";
+  color: #c1c1c2;
+}
+.icon-minusBTn:before {
+  content: "\e914";
+  color: #c1c1c2;
+}
+.icon-upFile:before {
+  content: "\e90f";
+  color: #c1c1c2;
+}
+.icon-refresh:before {
+  content: "\e910";
+  color: #c1c1c2;
+}
+.icon-closeLink:before {
+  content: "\e90e";
+  color: #c1c1c2;
+}
+.icon-callother:before {
+  content: "\e90d";
+  color: #c1c1c2;
+}
+.icon-keep:before {
+  content: "\e90c";
+  color: #c1c1c2;
+}
+.icon-call:before {
+  content: "\e904";
+  color: #c1c1c2;
+}
+.icon-callIn:before {
+  content: "\e905";
+  color: #c1c1c2;
+}
+.icon-callOut:before {
+  content: "\e906";
+  color: #c1c1c2;
+}
+.icon-clear:before {
+  content: "\e907";
+  color: #c1c1c2;
+}
+.icon-good:before {
+  content: "\e908";
+  color: #c1c1c2;
+}
+.icon-left:before {
+  content: "\e909";
+  color: #c1c1c2;
+}
+.icon-right:before {
+  content: "\e90a";
+  color: #c1c1c2;
+}
+.icon-subtract:before {
+  content: "\e90b";
+  color: #c1c1c2;
+}
+.icon-phone:before {
+  content: "\e900";
+  color: #c1c1c2;
+}
+.icon-note:before {
+  content: "\e901";
+  color: #c1c1c2;
+}
+.icon-backstage:before {
+  content: "\e902";
+  color: #c1c1c2;
+}
+.icon-home:before {
+  content: "\e903";
+  color: #c1c1c2;
+}

@@ -1,0 +1,1076 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
+  overflow-scrolling: touch; }
+
+html * {
+  outline: 0;
+  box-sizing: border-box;
+  word-wrap: break-word; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+input, select, textarea {
+  font-size: 100%; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+del {
+  text-decoration: line-through; }
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 500; }
+
+ol, ul, li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+sub, sup {
+  font-size: 75%;
+  ine-eight: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+a:hover {
+  text-decoration: none; }
+
+ins, a {
+  color: #000;
+  text-decoration: none; }
+
+button, input {
+  border: none;
+  outline: none; }
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  font-family: "PingFang-SC-Medium", "PingFang SC", "San Francisco", "sans-serif", "Arial", "Microsoft YaHei"; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.overFlowText {
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+body* {
+  overflow-x: hidden; }
+
+.tabs-scroller-right {
+  display: none !important; }
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #8A8D91; }
+
+#easyuiMain {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5; }
+  #easyuiMain #sideTabs {
+    width: 3.47368%;
+    height: 100%;
+    min-width: 3.47368%;
+    background-color: #0098ca; }
+    #easyuiMain #sideTabs #logo {
+      width: 100%;
+      height: 83px;
+      background: url("../img/logo.png") no-repeat;
+      background-size: contain; }
+    #easyuiMain #sideTabs #sideList {
+      width: 100%; }
+      #easyuiMain #sideTabs #sideList .tab:nth-child(1) {
+        background-image: url("../img/home.png"); }
+      #easyuiMain #sideTabs #sideList .tab:nth-child(2) {
+        background-image: url("../img/pe.png"); }
+      #easyuiMain #sideTabs #sideList .tab:nth-child(3) {
+        background-image: url("../img/deng.png"); }
+      #easyuiMain #sideTabs #sideList .tab:nth-child(4) {
+        background-image: url("../img/chart.png"); }
+      #easyuiMain #sideTabs #sideList .tab:nth-child(1):hover {
+        background-image: url("../img/home_on.png"); }
+      #easyuiMain #sideTabs #sideList .tab:nth-child(2):hover {
+        background-image: url("../img/pe_on.png"); }
+      #easyuiMain #sideTabs #sideList .tab:nth-child(3):hover {
+        background-image: url("../img/deng_on.png"); }
+      #easyuiMain #sideTabs #sideList .tab:nth-child(4):hover {
+        background-image: url("../img/chart_on.png"); }
+      #easyuiMain #sideTabs #sideList .tab {
+        width: 100%;
+        height: 66px;
+        font-size: 24px;
+        text-align: center;
+        line-height: 66px;
+        margin-top: 5px;
+        color: #ffffff;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 70%; }
+        #easyuiMain #sideTabs #sideList .tab .tabList {
+          position: absolute;
+          width: 150px;
+          z-index: 200;
+          top: 0;
+          right: -150px;
+          border: 1px solid #cccccc;
+          border-bottom: 0;
+          display: none;
+          background-color: #e8e8e8;
+          overflow-x: hidden;
+          overflow-y: auto; }
+          #easyuiMain #sideTabs #sideList .tab .tabList li {
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #cccccc;
+            color: #858585;
+            line-height: 40px;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer; }
+          #easyuiMain #sideTabs #sideList .tab .tabList li:hover {
+            background-color: #cccccc;
+            color: #009aca; }
+      #easyuiMain #sideTabs #sideList .tab:before {
+        color: #ffffff;
+        padding: 8px;
+        border: 1px solid #ffffff;
+        border-radius: 50%; }
+      #easyuiMain #sideTabs #sideList .tab:hover .tab:before {
+        color: #cccccc; }
+  #easyuiMain #main {
+    width: 96.52%;
+    height: 100%;
+    background-color: #f7f7f7;
+    border-right: 1px solid #cccccc; }
+    #easyuiMain #main #mainHeader {
+      width: 82%;
+      min-width: 1200px;
+      height: 88px;
+      border-top-left-radius: 66px;
+      border-bottom-left-radius: 66px;
+      background-color: #f7f7f7; }
+      #easyuiMain #main #mainHeader #phoneTitle {
+        width: 100%;
+        height: 88px;
+        background-color: #0098ca;
+        border-top-left-radius: 66px;
+        border-bottom-left-radius: 66px; }
+        #easyuiMain #main #mainHeader #phoneTitle #phoneMessage {
+          height: 100%;
+          margin-left: 5%; }
+          #easyuiMain #main #mainHeader #phoneTitle #phoneMessage p {
+            height: 50%;
+            color: #ffffff;
+            font-size: 16px; }
+            #easyuiMain #main #mainHeader #phoneTitle #phoneMessage p span {
+              display: inline-block; }
+          #easyuiMain #main #mainHeader #phoneTitle #phoneMessage #link_icon {
+            width: 5px;
+            height: 5px;
+            background-color: #09fe85;
+            border-radius: 50%;
+            margin-right: 10px; }
+          #easyuiMain #main #mainHeader #phoneTitle #phoneMessage #phoneAd {
+            padding-left: 10px; }
+          #easyuiMain #main #mainHeader #phoneTitle #phoneMessage #phone_time {
+            color: #09fe85;
+            padding-left: 10px; }
+          #easyuiMain #main #mainHeader #phoneTitle #phoneMessage p:nth-child(1) {
+            line-height: 42px; }
+        #easyuiMain #main #mainHeader #phoneTitle #headerIcon {
+          height: 100%; }
+          #easyuiMain #main #mainHeader #phoneTitle #headerIcon .iconBtn {
+            width: 35px;
+            height: 60px;
+            text-align: center;
+            margin-top: 11px;
+            margin-left: 10px;
+            background-color: #0098ca; }
+            #easyuiMain #main #mainHeader #phoneTitle #headerIcon .iconBtn img {
+              width: 100%;
+              height: 100%; }
+        #easyuiMain #main #mainHeader #phoneTitle #loginMessage {
+          height: 100%;
+          margin-right: 3%;
+          float: right; }
+          #easyuiMain #main #mainHeader #phoneTitle #loginMessage #headerImg {
+            width: 50px;
+            height: 50px;
+            margin-top: 11px;
+            border: 4px solid #07ff87;
+            border-radius: 50%; }
+            #easyuiMain #main #mainHeader #phoneTitle #loginMessage #headerImg img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%; }
+          #easyuiMain #main #mainHeader #phoneTitle #loginMessage #infomation {
+            height: 100%;
+            padding-top: 10px; }
+            #easyuiMain #main #mainHeader #phoneTitle #loginMessage #infomation p {
+              color: #f4f9fd;
+              font-size: 14px;
+              height: 20px;
+              line-height: 22px;
+              padding-left: 10px; }
+          #easyuiMain #main #mainHeader #phoneTitle #loginMessage #closeBtn {
+            width: 40px;
+            height: 100%;
+            font-size: 40px;
+            line-height: 88px;
+            margin-left: 10px; }
+          #easyuiMain #main #mainHeader #phoneTitle #loginMessage .icon-closeLink:before {
+            color: #f0f9fe; }
+    #easyuiMain #main #mainbox .layout-split-west, #easyuiMain #main #mainbox .layout-split-east {
+      border: none; }
+    #easyuiMain #main #mainbox .tabs-scroller-left {
+      display: none !important; }
+    #easyuiMain #main #mainbox .panel-header, #easyuiMain #main #mainbox .panel-body {
+      border: none; }
+    #easyuiMain #main #mainbox .panel-header {
+      height: 30px;
+      background: #ffffff; }
+    #easyuiMain #main #mainbox .panel-tool {
+      width: 12px;
+      height: 80px; }
+      #easyuiMain #main #mainbox .panel-tool a {
+        width: 100%;
+        height: 100%; }
+    #easyuiMain #main #mainbox .panel-tool:hover {
+      background-color: transparent; }
+    #easyuiMain #main #mainbox .layout-button-right {
+      background-image: url("../img/arrows.png");
+      background-repeat: no-repeat;
+      background-position-y: -4px; }
+    #easyuiMain #main #mainbox .layout-button-left {
+      background-image: url("../img/arrows.png");
+      background-repeat: no-repeat;
+      background-position-y: -4px; }
+    #easyuiMain #main #mainbox .layout-button-right:hover {
+      background-color: transparent; }
+    #easyuiMain #main #mainbox .layout-button-left:hover {
+      background-color: transparent; }
+    #easyuiMain #main #mainbox .layout-split-west {
+      border-top: 1px solid #cccccc; }
+      #easyuiMain #main #mainbox .layout-split-west .panel-tool {
+        position: absolute;
+        top: 800%;
+        right: 0; }
+        #easyuiMain #main #mainbox .layout-split-west .panel-tool .layout-button-left {
+          background-position-x: -71px; }
+        #easyuiMain #main #mainbox .layout-split-west .panel-tool .layout-button-left:hover {
+          background-position-x: -88px; }
+    #easyuiMain #main #mainbox .layout-split-east .layout-button-right {
+      background-position-x: -23px; }
+    #easyuiMain #main #mainbox .layout-split-east .layout-button-right:hover {
+      background-position-x: -6px; }
+    #easyuiMain #main #mainbox .layout-panel-east, #easyuiMain #main #mainbox .layout-panel-west {
+      z-index: 0; }
+    #easyuiMain #main #mainbox .layout-panel-center {
+      border-top: 1px solid #cccccc; }
+    #easyuiMain #main #mainbox .layout-panel-east {
+      border-top: 1px solid #cccccc; }
+      #easyuiMain #main #mainbox .layout-panel-east .panel-tool {
+        position: absolute;
+        top: 800%;
+        left: -2px; }
+    #easyuiMain #main #mainbox .layout-expand {
+      border-top: 1px solid #cccccc; }
+      #easyuiMain #main #mainbox .layout-expand .panel-header {
+        overflow: visible;
+        position: relative; }
+        #easyuiMain #main #mainbox .layout-expand .panel-header .panel-tool {
+          top: 800%; }
+    #easyuiMain #main #mainbox .layout-expand-east .panel-tool {
+      right: -1px; }
+    #easyuiMain #main #mainbox .layout-expand-east .layout-button-left {
+      background-position-x: -71px; }
+    #easyuiMain #main #mainbox .layout-expand-east .layout-button-left:hover {
+      background-position-x: -88px; }
+    #easyuiMain #main #mainbox .layout-expand-west .panel-tool {
+      left: -2px; }
+    #easyuiMain #main #mainbox .layout-expand-west .panel-header {
+      position: relative; }
+    #easyuiMain #main #mainbox .layout-expand-west .layout-button-right {
+      background-position-x: -23px; }
+    #easyuiMain #main #mainbox .layout-expand-west .layout-button-right:hover {
+      background-position-x: -6px; }
+    #easyuiMain #main #mainbox .panel-title {
+      width: 100% !important;
+      height: 100% !important;
+      line-height: 20px;
+      text-indent: 10px;
+      font-size: 14px;
+      color: #009aca; }
+    #easyuiMain #main #mainbox .layout-expand-west {
+      position: relative; }
+    #easyuiMain #main #mainbox .combo-arrow {
+      background-color: #ffffff !important; }
+    #easyuiMain #main #mainbox .easyui-tabs {
+      width: 100% !important;
+      border: none;
+      overflow-x: hidden; }
+      #easyuiMain #main #mainbox .easyui-tabs .tabs-panels {
+        border: none; }
+      #easyuiMain #main #mainbox .easyui-tabs .tabs-header {
+        height: 30px !important;
+        border: none !important;
+        background-color: #ffffff;
+        padding: 0;
+        margin: 0;
+        border: none; }
+        #easyuiMain #main #mainbox .easyui-tabs .tabs-header .tabs-wrap {
+          width: 100% !important;
+          margin: 0 !important; }
+        #easyuiMain #main #mainbox .easyui-tabs .tabs-header .tabs {
+          height: 30px !important;
+          padding: 0 !important;
+          background-color: #ffffff;
+          border: none; }
+          #easyuiMain #main #mainbox .easyui-tabs .tabs-header .tabs li {
+            height: 100% !important;
+            margin: 0;
+            background-color: #e8e8e8; }
+            #easyuiMain #main #mainbox .easyui-tabs .tabs-header .tabs li .tabs-inner {
+              width: 100%;
+              padding: 0 !important;
+              height: 100% !important;
+              text-align: center;
+              border-radius: 0;
+              line-height: 30px;
+              background: #e8e8e8;
+              border: 1px solid transparent;
+              border-bottom: 1px solid #cccccc; }
+              #easyuiMain #main #mainbox .easyui-tabs .tabs-header .tabs li .tabs-inner .tabs-inner:nth-child(1) {
+                border-left: none; }
+              #easyuiMain #main #mainbox .easyui-tabs .tabs-header .tabs li .tabs-inner .tabs-title {
+                font-size: 13px;
+                color: #666666;
+                line-height: 30px; }
+          #easyuiMain #main #mainbox .easyui-tabs .tabs-header .tabs .tabs-selected {
+            background-color: #ffffff; }
+            #easyuiMain #main #mainbox .easyui-tabs .tabs-header .tabs .tabs-selected .tabs-inner {
+              background-color: #ffffff;
+              border-left: 1px solid #cccccc;
+              border-right: 1px solid #cccccc;
+              border-bottom: 1px solid transparent;
+              border-top: 1px solid #009aca; }
+            #easyuiMain #main #mainbox .easyui-tabs .tabs-header .tabs .tabs-selected .tabs-inner:nth-child(1) {
+              border-left: none; }
+            #easyuiMain #main #mainbox .easyui-tabs .tabs-header .tabs .tabs-selected .tabs-title {
+              color: #0098ca !important; }
+      #easyuiMain #main #mainbox .easyui-tabs .tabs-panels {
+        width: 100% !important;
+        height: 100% !important; }
+        #easyuiMain #main #mainbox .easyui-tabs .tabs-panels .panel {
+          width: 100% !important;
+          height: 100% !important; }
+    #easyuiMain #main #mainbox .panel-body {
+      background-color: #f7f7f7; }
+    #easyuiMain #main #mainbox .layout-expand {
+      background-color: transparent; }
+    #easyuiMain #main #mainbox #sideLeft {
+      background-color: #f7f7f7; }
+      #easyuiMain #main #mainbox #sideLeft #dataStat {
+        width: 100%;
+        height: 100%; }
+      #easyuiMain #main #mainbox #sideLeft #today {
+        width: 100% !important;
+        height: 200px !important; }
+    #easyuiMain #main #mainbox #leftTab .tabs {
+      width: 100% !important; }
+      #easyuiMain #main #mainbox #leftTab .tabs li {
+        width: 33.3% !important; }
+    #easyuiMain #main #mainbox #leftTab #jobInformation {
+      width: 100%;
+      height: 100%; }
+      #easyuiMain #main #mainbox #leftTab #jobInformation #infomationHeader {
+        width: 100%;
+        height: 10%;
+        line-height: 40px;
+        text-align: center;
+        color: #c1c1c2;
+        font-weight: bold; }
+        #easyuiMain #main #mainbox #leftTab #jobInformation #infomationHeader span {
+          padding: 0 8px;
+          font-size: 18px;
+          color: #58caee; }
+      #easyuiMain #main #mainbox #leftTab #jobInformation #infomationList {
+        width: 100%;
+        height: 30%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border-bottom: 1px solid #cccccc; }
+        #easyuiMain #main #mainbox #leftTab #jobInformation #infomationList .news {
+          width: 100%; }
+          #easyuiMain #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain {
+            width: 90%;
+            margin: 0 10px;
+            overflow: hidden;
+            border-bottom: 1px solid #000; }
+            #easyuiMain #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsListHeader {
+              width: 100%;
+              color: #434343;
+              font-size: 14px;
+              overflow: hidden;
+              cursor: pointer; }
+              #easyuiMain #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsListHeader .upDown {
+                width: 0;
+                height: 0;
+                margin: 3px 5px; }
+              #easyuiMain #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsListHeader .iconDown {
+                border-top: 5px solid transparent;
+                border-left: 10px solid #434343;
+                border-bottom: 5px solid transparent; }
+              #easyuiMain #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsListHeader .newsTitle {
+                width: 60%;
+                overflow: hidden; }
+              #easyuiMain #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsListHeader .iconUp {
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 10px solid #434343; }
+            #easyuiMain #main #mainbox #leftTab #jobInformation #infomationList .news .newsMain .newsBody {
+              width: 100%;
+              overflow: hidden;
+              font-size: 16px;
+              color: #6a6a6a;
+              line-height: 20px;
+              padding: 20px 10px;
+              text-indent: 20px;
+              display: none; }
+      #easyuiMain #main #mainbox #leftTab #jobInformation #chartData {
+        width: 100%;
+        height: 50%; }
+    #easyuiMain #main #mainbox #centerSide {
+      position: relative; }
+      #easyuiMain #main #mainbox #centerSide .centerTab {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        opacity: 0;
+        background-color: #f7f7f7;
+        border-left: 1px solid #cccccc;
+        border-right: 1px solid #cccccc; }
+        #easyuiMain #main #mainbox #centerSide .centerTab .tabs-wrap {
+          width: 100% !important; }
+        #easyuiMain #main #mainbox #centerSide .centerTab #headerTab1 {
+          width: 100%; }
+        #easyuiMain #main #mainbox #centerSide .centerTab .tabs-panels {
+          border: none; }
+        #easyuiMain #main #mainbox #centerSide .centerTab .panel-body {
+          width: 100% !important; }
+      #easyuiMain #main #mainbox #centerSide #centerTab0 {
+        z-index: 5;
+        opacity: 1; }
+        #easyuiMain #main #mainbox #centerSide #centerTab0 #defalutHead {
+          width: 100%;
+          height: 60px;
+          background-color: #ffffff;
+          border-bottom: 1px solid #cccccc; }
+          #easyuiMain #main #mainbox #centerSide #centerTab0 #defalutHead div {
+            width: 10%;
+            height: 100%;
+            margin-left: 2%; }
+            #easyuiMain #main #mainbox #centerSide #centerTab0 #defalutHead div p {
+              width: 100%;
+              height: 50%;
+              line-height: 30px;
+              text-align: center;
+              font-size: 16px;
+              color: #4c4c4c; }
+              #easyuiMain #main #mainbox #centerSide #centerTab0 #defalutHead div p img {
+                width: 100%;
+                height: 100%; }
+        #easyuiMain #main #mainbox #centerSide #centerTab0 #defalutbody {
+          width: 100%;
+          overflow: hidden; }
+      #easyuiMain #main #mainbox #centerSide #centerTab1 .tabs-wrap {
+        width: 100% !important;
+        height: 30px !important; }
+      #easyuiMain #main #mainbox #centerSide #centerTab1 .easyui-tabs {
+        width: 100% !important;
+        height: 100% !important; }
+        #easyuiMain #main #mainbox #centerSide #centerTab1 .easyui-tabs .tabs-header {
+          width: 100% !important;
+          border-left: 1px solid #cccccc;
+          border-right: 1px solid #cccccc; }
+      #easyuiMain #main #mainbox #centerSide #centerTab1 .icon-add, #easyuiMain #main #mainbox #centerSide #centerTab1 .icon-remove {
+        width: 16px;
+        height: 16px; }
+      #easyuiMain #main #mainbox #centerSide #centerTab1 .tabs-tool {
+        height: 50px !important;
+        background-color: #ffffff;
+        border: none;
+        right: 0;
+        top: 0; }
+        #easyuiMain #main #mainbox #centerSide #centerTab1 .tabs-tool a {
+          background-color: #cfc9cc;
+          color: #009aca;
+          padding-right: 10px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab1 .tabs-tool a .l-btn-icon {
+            height: 16px !important;
+            width: 16px !important;
+            margin-left: 5px; }
+      #easyuiMain #main #mainbox #centerSide #centerTab2 {
+        width: 100%;
+        overflow-x: hidden; }
+        #easyuiMain #main #mainbox #centerSide #centerTab2 #customerMes {
+          width: 100%; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 #customerMes #customerMain {
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 1px solid #009aca;
+            margin: 20px 0; }
+            #easyuiMain #main #mainbox #centerSide #centerTab2 #customerMes #customerMain #customerMesList {
+              width: 100%;
+              overflow: hidden; }
+              #easyuiMain #main #mainbox #centerSide #centerTab2 #customerMes #customerMain #customerMesList .mesItem {
+                width: 30%;
+                height: 30px;
+                padding-left: 20px;
+                font-size: 14px; }
+                #easyuiMain #main #mainbox #centerSide #centerTab2 #customerMes #customerMain #customerMesList .mesItem .mes {
+                  text-decoration: underline; }
+        #easyuiMain #main #mainbox #centerSide #centerTab2 #workOrder {
+          position: relative; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 #workOrder .mesHeader em {
+            font-size: 14px; }
+            #easyuiMain #main #mainbox #centerSide #centerTab2 #workOrder .mesHeader em i {
+              font-size: 14px;
+              color: salmon;
+              font-style: normal; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 #workOrder .tabs {
+            background-color: #f7f7f7; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 #workOrder .tabs-panels {
+            border: none; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 #workOrder .tabs-header {
+            border-right: 1px solid #cccccc; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 #workOrder .tabs li {
+            width: 20% !important; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 #workOrder #order {
+            width: 30%;
+            height: 30px;
+            position: absolute;
+            top: 2%;
+            right: 5%;
+            z-index: 5;
+            font-size: 16px; }
+            #easyuiMain #main #mainbox #centerSide #centerTab2 #workOrder #order #orderNum {
+              color: salmon; }
+        #easyuiMain #main #mainbox #centerSide #centerTab2 #consult {
+          width: 90% !important;
+          height: 420px !important;
+          margin: 10px 5% 8%;
+          box-sizing: border-box;
+          border: 2px solid #009aca;
+          border-radius: 36px;
+          position: relative; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 #consult .tabs-header {
+            border: none;
+            padding: 0;
+            margin: 0;
+            background-color: #f7f7f7; }
+            #easyuiMain #main #mainbox #centerSide #centerTab2 #consult .tabs-header .tabs-wrap {
+              background-color: #f7f7f7; }
+            #easyuiMain #main #mainbox #centerSide #centerTab2 #consult .tabs-header .tabs {
+              border: none; }
+              #easyuiMain #main #mainbox #centerSide #centerTab2 #consult .tabs-header .tabs li {
+                line-height: 30px;
+                height: 30px !important;
+                margin: 0;
+                padding: 0;
+                border: none;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border-top-right-radius: 0; }
+                #easyuiMain #main #mainbox #centerSide #centerTab2 #consult .tabs-header .tabs li .tabs-inner {
+                  height: 100% !important;
+                  margin: 0;
+                  padding: 0;
+                  border-top-left-radius: 30px;
+                  border-bottom-right-radius: 30px;
+                  border-top-right-radius: 0; }
+                  #easyuiMain #main #mainbox #centerSide #centerTab2 #consult .tabs-header .tabs li .tabs-inner .tabs-title {
+                    line-height: 30px; }
+        #easyuiMain #main #mainbox #centerSide #centerTab2 .workHeader {
+          width: 100%;
+          overflow: hidden; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .workHeader .workItem {
+            width: 25%;
+            height: 20px;
+            line-height: 20px;
+            margin-left: 10px;
+            font-size: 14px;
+            color: #4c4c4c; }
+        #easyuiMain #main #mainbox #centerSide #centerTab2 .library {
+          width: 90%;
+          overflow: hidden;
+          margin: 10px 5%;
+          border: 2px solid #000000;
+          border-radius: 10px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .library #urlPath {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            color: #3d3d3d;
+            text-indent: 40px;
+            border-top: 1px solid #000000; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .library .variableP {
+            width: 100%;
+            overflow: hidden; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .library .variable {
+            width: 16.6%;
+            height: 100%;
+            overflow: hidden; }
+            #easyuiMain #main #mainbox #centerSide #centerTab2 .library .variable input[type=checkbox] {
+              border-radius: 50%; }
+            #easyuiMain #main #mainbox #centerSide #centerTab2 .library .variable dt {
+              width: 100%;
+              height: 40px;
+              line-height: 40px;
+              font-size: 14px;
+              color: #4c4c4c;
+              text-align: center;
+              border-bottom: 1px solid #4c4c4c; }
+            #easyuiMain #main #mainbox #centerSide #centerTab2 .library .variable dd {
+              width: 100%;
+              height: 30px;
+              line-height: 30px;
+              font-size: 14px;
+              color: #4c4c4c;
+              text-align: center; }
+            #easyuiMain #main #mainbox #centerSide #centerTab2 .library .variable dd:nth-child(1) {
+              padding-top: 60px; }
+            #easyuiMain #main #mainbox #centerSide #centerTab2 .library .variable dd:last-child {
+              padding-bottom: 20px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .library .variable + .variable {
+            border-left: 1px solid #4c4c4c; }
+        #easyuiMain #main #mainbox #centerSide #centerTab2 .upFile {
+          width: 90%;
+          height: 30px;
+          margin-left: 5%;
+          line-height: 30px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .upFile .fileBox {
+            width: 30px;
+            height: 30px;
+            height: 100%;
+            position: relative;
+            margin-left: 10px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .upFile .fileBox:before {
+            color: #009aca;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .upFile .fileCheck {
+            width: 30px;
+            height: 30px;
+            opacity: 0;
+            position: absolute;
+            z-index: 5;
+            top: 0;
+            left: 0; }
+        #easyuiMain #main #mainbox #centerSide #centerTab2 .fileList li {
+          font-size: 14px;
+          color: #009aca;
+          float: left;
+          line-height: 30px;
+          margin-left: 10px; }
+        #easyuiMain #main #mainbox #centerSide #centerTab2 .remark {
+          width: 90%;
+          margin-left: 5%;
+          overflow: hidden;
+          position: relative; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .remark textarea.textbox-text {
+            width: 80% !important;
+            height: 50px !important;
+            border-radius: 10px;
+            border: 2px solid #6a6a6a; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .remark .markIcon {
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+            position: absolute;
+            top: 20px;
+            line-height: 30px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .remark .refresh {
+            right: 12%; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .remark .sure {
+            right: 2%; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 .remark .markIcon:before {
+            color: #009aca;
+            padding: 8px;
+            border: 1px solid #009aca;
+            border-radius: 50%; }
+        #easyuiMain #main #mainbox #centerSide #centerTab2 .tabs-panels {
+          border-top: 1px solid #cccccc; }
+        #easyuiMain #main #mainbox #centerSide #centerTab2 #serveRes {
+          position: relative; }
+          #easyuiMain #main #mainbox #centerSide #centerTab2 #serveRes .treeMain {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 10px; }
+        #easyuiMain #main #mainbox #centerSide #centerTab2 .diyBtn1 {
+          width: 60px;
+          background-color: #009aca;
+          color: #ffffff;
+          text-decoration: none;
+          display: inline-block;
+          text-align: center; }
+      #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers {
+        width: 100%; }
+        #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader {
+          width: 100%;
+          height: 70px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #clientName input {
+            text-indent: 5px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #recordDate {
+            position: relative; }
+            #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #recordDate .textbox-text {
+              width: 100% !important;
+              height: 30px !important;
+              margin: 0;
+              padding: 0;
+              position: absolute;
+              left: 0;
+              top: 0;
+              text-indent: 30px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader .combo {
+            border: none; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #clientName input, #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #recordDate .textbox-text {
+            font-size: 14px;
+            color: #555555;
+            vertical-align: middle;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            -webkit-appearance: none;
+            -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+            transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #clientName input:focus, #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #recordDate .textbox-text:focus {
+            background-color: #fefffe;
+            border-color: #3bb4f2;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(59, 180, 242, 0.3);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(59, 180, 242, 0.3); }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div {
+            width: 40%;
+            height: 30px;
+            font-size: 14px;
+            margin-left: 6%;
+            margin-top: 20px; }
+            #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div .searchInput, #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div .textbox {
+              width: 70% !important;
+              height: 30px !important;
+              border-radius: 5px;
+              margin-left: 5px;
+              position: relative; }
+            #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div .focused {
+              -moz-box-shadow: 0 0 10px #009aca;
+              -webkit-box-shadow: 0 0 10px #009aca;
+              box-shadow: 0 0 10px #009aca; }
+            #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div .textbox-addon-right {
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              margin: 7px 0 0 4px;
+              position: absolute;
+              left: 4px;
+              top: 0;
+              z-index: 5; }
+            #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div .textbox-text {
+              height: 30px !important;
+              padding: 0 !important;
+              margin: 0 !important;
+              overflow: hidden; }
+            #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader > div .validatebox-invalid {
+              background-color: transparent;
+              background-image: none;
+              text-indent: 10px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #searchBtn {
+            width: 60px;
+            height: 30px;
+            margin-top: 20px;
+            margin-right: 6%;
+            padding-top: 0;
+            background-color: #009aca;
+            color: #ffffff;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 5px; }
+            #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #searchBtn span {
+              display: inline-block; }
+            #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #searchBtn .l-btn-left {
+              display: inline-block;
+              width: 100% !important;
+              height: 100% !important; }
+              #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #searchBtn .l-btn-left > span {
+                float: left; }
+            #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader #searchBtn .l-btn-text {
+              height: 30px;
+              line-height: 30px;
+              margin-left: 10px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manHeader .m-btn-downarrow {
+            line-height: 30px;
+            padding-top: 10px;
+            margin-top: 7px; }
+        #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manMain {
+          width: 100%; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manMain table {
+            width: 100% !important; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manMain .datagrid-pager table {
+            width: 400px !important;
+            border-right: 1px solid #cccccc; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manCustomers #manMain .datagrid {
+            width: 100%;
+            overflow: hidden; }
+      #easyuiMain #main #mainbox #centerSide #centerTab3 #manMain {
+        width: 100%;
+        overflow: hidden; }
+        #easyuiMain #main #mainbox #centerSide #centerTab3 #manMain #operation {
+          width: 100%;
+          height: 30px;
+          background-color: #f7f7f7; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manMain #operation a.easyui-linkbutton {
+            padding: 0 !important;
+            height: 30px !important; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manMain #operation a.easyui-linkbutton:hover {
+            background-color: transparent;
+            border: none; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manMain #operation a {
+            width: 80px;
+            text-align: center;
+            color: #ffffff;
+            line-height: 30px;
+            margin-left: 3px;
+            border-radius: 5px;
+            font-size: 16px; }
+            #easyuiMain #main #mainbox #centerSide #centerTab3 #manMain #operation a img {
+              width: 100%;
+              height: 100%; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manMain #operation a:last-child {
+            margin-right: 10px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manMain #operation a:nth-child(4) {
+            margin-right: 15.5%; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manMain #operation a.l-btn span.l-btn-left {
+            padding: 0;
+            margin: 0;
+            line-height: 30px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manMain #operation .l-btn-left {
+            height: 30px; }
+          #easyuiMain #main #mainbox #centerSide #centerTab3 #manMain #operation span.l-btn-text {
+            width: auto;
+            height: 30px;
+            line-height: 30px; }
+      #easyuiMain #main #mainbox #centerSide #centerTab4 .formList {
+        width: 90%;
+        overflow: hidden;
+        margin-left: 5%;
+        margin-top: 5%; }
+        #easyuiMain #main #mainbox #centerSide #centerTab4 .formList span.formText {
+          float: left;
+          width: 15%;
+          height: 30px;
+          line-height: 30px;
+          text-align: right;
+          margin-right: 5%;
+          font-size: 14px; }
+        #easyuiMain #main #mainbox #centerSide #centerTab4 .formList input {
+          height: 30px; }
+        #easyuiMain #main #mainbox #centerSide #centerTab4 .formList textarea {
+          font-size: 14px;
+          min-height: 200px;
+          font-size: 16px; }
+        #easyuiMain #main #mainbox #centerSide #centerTab4 .formList input, #easyuiMain #main #mainbox #centerSide #centerTab4 .formList textarea {
+          display: block;
+          width: 60%;
+          color: #555555;
+          vertical-align: middle;
+          background-color: #ffffff;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          -webkit-appearance: none;
+          text-indent: 10px;
+          -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+          transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
+        #easyuiMain #main #mainbox #centerSide #centerTab4 .formList input:focus, #easyuiMain #main #mainbox #centerSide #centerTab4 .formList textarea:focus {
+          background-color: #fefffe;
+          border-color: #3bb4f2;
+          outline: 0;
+          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(59, 180, 242, 0.3);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px rgba(59, 180, 242, 0.3); }
+      #easyuiMain #main #mainbox #centerSide #centerTab4 .sub {
+        width: 72px;
+        height: 30px;
+        text-align: center;
+        position: absolute;
+        right: 10%;
+        bottom: 20px; }
+        #easyuiMain #main #mainbox #centerSide #centerTab4 .sub img {
+          width: 100%;
+          height: 100%; }
+      #easyuiMain #main #mainbox #centerSide #centerTab4 .formMain {
+        width: 100%;
+        position: relative;
+        padding-bottom: 50px; }
+      #easyuiMain #main #mainbox #centerSide #wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative; }
+        #easyuiMain #main #mainbox #centerSide #wrapper .tabsBtn {
+          width: 20px;
+          height: 30px;
+          position: absolute;
+          top: 0;
+          z-index: 10; }
+        #easyuiMain #main #mainbox #centerSide #wrapper #leftTabBtn {
+          left: 0;
+          background: #A4A4A4 url("../img/leftTab.png") no-repeat 0 50%;
+          background-size: contain; }
+        #easyuiMain #main #mainbox #centerSide #wrapper #rightTabBtn {
+          right: 0;
+          background: #A4A4A4 url("../img/rightTab.png") no-repeat 0 50%;
+          background-size: contain; }
+      #easyuiMain #main #mainbox #centerSide #easyTab1 .tabs-wrap .tabs {
+        margin-left: 0; }
+        #easyuiMain #main #mainbox #centerSide #easyTab1 .tabs-wrap .tabs li {
+          width: 100px !important; }
+    #easyuiMain #main #mainbox .datagrid-header {
+      width: 100% !important;
+      margin-top: 10px; }
+      #easyuiMain #main #mainbox .datagrid-header .datagrid-header-inner {
+        width: 100% !important;
+        border-top: 1px solid #cccccc; }
+    #easyuiMain #main #mainbox .datagrid-row-over, #easyuiMain #main #mainbox .datagrid-header-over {
+      background-color: transparent;
+      color: #000; }
+    #easyuiMain #main #mainbox .datagrid-btable {
+      width: 100% !important; }
+      #easyuiMain #main #mainbox .datagrid-btable td {
+        color: #228bcc;
+        text-align: center; }
+    #easyuiMain #main #mainbox .datagrid-header-row {
+      background-color: #ffffff; }
+    #easyuiMain #main #mainbox .datagrid-view {
+      width: 100% !important; }
+    #easyuiMain #main #mainbox .datagrid-body {
+      width: 100% !important; }
+    #easyuiMain #main #mainbox .datagrid-btable {
+      width: 100% !important; }
+      #easyuiMain #main #mainbox .datagrid-btable tr {
+        width: 100% !important; }
+    #easyuiMain #main #mainbox .datagrid-view2 {
+      width: 100% !important; }
+    #easyuiMain #main #mainbox .datagrid-pager {
+      width: 100%;
+      height: auto;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-top: none;
+      padding: 0; }
+      #easyuiMain #main #mainbox .datagrid-pager table {
+        width: 400px !important; }
+    #easyuiMain #main #mainbox .datagrid-header td, #easyuiMain #main #mainbox .datagrid-body td, #easyuiMain #main #mainbox .datagrid-footer td {
+      border-style: solid; }
+    #easyuiMain #main #mainbox .pagination-btn-separator {
+      display: none; }
+    #easyuiMain #main #mainbox .pagination-page-list {
+      background-color: #ffffff; }
+    #easyuiMain #main #mainbox .pagination-num {
+      text-align: center; }
+    #easyuiMain #main #mainbox .datagrid-row-selected {
+      background-color: #dfe8e7; }
+    #easyuiMain #main #mainbox .datagrid-toolbar {
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      border: none; }
+    #easyuiMain #main #mainbox .pagination-info {
+      display: none; }
+    #easyuiMain #main #mainbox span.l-btn-empty, #easyuiMain #main #mainbox span.l-btn-icon {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      width: 16px; }
+    #easyuiMain #main #mainbox .mesHeader {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      color: #c1c1c2;
+      font-weight: bold;
+      padding-left: 30px; }
+      #easyuiMain #main #mainbox .mesHeader span {
+        padding: 0 8px;
+        font-size: 18px;
+        color: #58caee; }
+    #easyuiMain #main #mainbox #rightSide {
+      width: 100%;
+      height: 100%;
+      background-color: #f7f7f7; }
+      #easyuiMain #main #mainbox #rightSide .rightTab {
+        width: 100%; }
+    #easyuiMain #main .panel-header {
+      float: left; }
+    #easyuiMain #main .layout-body {
+      float: left; }
+
+/*# sourceMappingURL=main.css.map */
